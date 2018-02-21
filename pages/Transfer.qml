@@ -258,7 +258,7 @@ Rectangle {
                 Address <font size='2'>  ( </font> <a href='#'>Address book</a><font size='2'> )</font>")
                 + translationManager.emptyString
               labelButtonText: qsTr("Resolve") + translationManager.emptyString
-              placeholderText: "4.."
+              placeholderText: "Wm..  or  Wz..  or  Xn.."
               onInputLabelLinkActivated: { appWindow.showPageRequest("AddressBook") }
               onLabelButtonClicked: {
                   var result = walletManager.resolveOpenAlias(addressLine.text)
@@ -603,7 +603,7 @@ Rectangle {
                 informationPopup.open();
             } else {
                 informationPopup.title = qsTr("Information") + translationManager.emptyString
-                informationPopup.text  = qsTr("Monero sent successfully") + translationManager.emptyString
+                informationPopup.text  = qsTr("Aeon sent successfully") + translationManager.emptyString
                 informationPopup.icon  = StandardIcon.Information
                 informationPopup.onCloseCallback = null
                 informationPopup.open();
